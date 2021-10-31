@@ -38,7 +38,7 @@
   * `pkg install python git -y`
   * `git clone https://github.com/TofuYa-dev/Impulse-rus`
   * `cd Impulse-rus/`
-  * `chmod +x setup.sh && ./setup.sh`
+  * `./setup.sh`
 
 * Рекомендации для Linux и Termux:
   * Устанавливайте Импульс в домашнюю директорию.
