@@ -14,22 +14,22 @@ def CriticalError(message, error):
     {Fore.MAGENTA}Сообщение: {message}.
     {Fore.MAGENTA}ОШИБКА: {error}
     {Fore.RED}:=== Python инфо:
-    {Fore.MAGENTA}PYTHON ВЕРСИЯ: {platform.python_version()}
-    {Fore.MAGENTA}PYTHON БИЛД: {'{}, DATE: {}'.format(*platform.python_build())}
-    {Fore.MAGENTA}PYTHON КОМПИЛЯТОР: {platform.python_compiler()}
-    {Fore.MAGENTA}РАСПОЛОЖЕНИЕ СКРИПТА: {os.path.dirname(os.path.realpath(sys.argv[0]))}
-    {Fore.MAGENTA}ТЕКУЩЕЕ ПОЛОЖЕНИЕ: {os.getcwd()}
+    {Fore.MAGENTA}Версия: {platform.python_version()}
+    {Fore.MAGENTA}Билд: {'{}, DATE: {}'.format(*platform.python_build())}
+    {Fore.MAGENTA}Компилятор: {platform.python_compiler()}
+    {Fore.MAGENTA}Расположение скрипта: {os.path.dirname(os.path.realpath(sys.argv[0]))}
+    {Fore.MAGENTA}Текущее положение: {os.getcwd()}
     {Fore.RED}:=== Системное инфо:
-    {Fore.MAGENTA}СИСТЕМА: {platform.system()}
-    {Fore.MAGENTA}РЕЛИЗ: {platform.release()}
-    {Fore.MAGENTA}ВЕРСИЯ: {platform.version()}
-    {Fore.MAGENTA}АРХИТЕКТУРА: {'{} {}'.format(*platform.architecture())}
-    {Fore.MAGENTA}ПРОЦЕССОР: {platform.processor()}
-    {Fore.MAGENTA}МАШИНА: {platform.machine()}
-    {Fore.MAGENTA}НОДА: {platform.node()}
-    {Fore.MAGENTA}ВРЕМЯ: {ctime()}
-    {Fore.RED}:=== РЕПОРТ:
-    {Fore.MAGENTA}Доложи об ошибке сюда: https://github.com/LimerBoy/Impulse/issues/new
+    {Fore.MAGENTA}Сиситема: {platform.system()}
+    {Fore.MAGENTA}Релиз: {platform.release()}
+    {Fore.MAGENTA}Версия: {platform.version()}
+    {Fore.MAGENTA}Архитектура: {'{} {}'.format(*platform.architecture())}
+    {Fore.MAGENTA}Процессор: {platform.processor()}
+    {Fore.MAGENTA}Машина: {platform.machine()}
+    {Fore.MAGENTA}Хост: {platform.node()}
+    {Fore.MAGENTA}Время: {ctime()}
+    {Fore.RED}:=== Репорт:
+    {Fore.MAGENTA}Сообщи об ошибке в телеграм @tea_allkash
     {Fore.RESET}
     """)
     sys.exit(5)
